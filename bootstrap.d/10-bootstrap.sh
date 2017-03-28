@@ -25,7 +25,7 @@ if [ "$RELEASE" = "stretch" ] ; then
 fi
 
 # Base debootstrap (unpack only)
-http_proxy=${APT_PROXY} debootstrap ${EXCLUDES} --arch="${RELEASE_ARCH}" --foreign ${VARIANT} --components="${COMPONENTS}" --include="${APT_INCLUDES}" "${RELEASE}" "${R}" "http://${APT_SERVER}/debian"
+http_proxy=${APT_PROXY} debootstrap ${EXCLUDES} --arch="${RELEASE_ARCH}" --foreign ${VARIANT} --components="${COMPONENTS}" --include="${APT_INCLUDES}" "${RELEASE}" "${R}" "${APT_SERVER}"
 
 # Copy qemu emulator binary to chroot
 install_exec "${QEMU_BINARY}" "${R}${QEMU_BINARY}"

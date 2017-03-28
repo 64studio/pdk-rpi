@@ -111,7 +111,7 @@ NET_NTP_2=${NET_NTP_2:=""}
 
 # APT settings
 APT_PROXY=${APT_PROXY:=""}
-APT_SERVER=${APT_SERVER:="ftp.debian.org"}
+APT_SERVER=${APT_SERVER:="http://ftp.debian.org/debian"}
 
 # Feature settings
 ENABLE_CONSOLE=${ENABLE_CONSOLE:=true}
